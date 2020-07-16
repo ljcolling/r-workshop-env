@@ -1,2 +1,2 @@
 setHook("rstudio.sessionInit", function(newSession) {
-rstudioapi::viewer("http://r-workshop.mindsci.net")})
+rstudioapi::viewer("https://r-workshop.mindsci.net")})
