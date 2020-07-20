@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 install.packages("remotes")
 xfun::pkg_attach2("tidyverse")
 xfun::pkg_attach2("emmeans")
