@@ -24,17 +24,8 @@ RUN ln -s ${PYTHON_VENV_PATH}/bin/pip /usr/local/bin/pip && \
 
 ## install as user to avoid venv issues later
 USER rstudio
-RUN pip3 install \
-    h5py==2.9.0 \
-    pyyaml==3.13 \
-    requests==2.21.0 \
-    Pillow==5.4.1 \
-    tensorflow==1.14.0 \
-    tensorflow-probability==0.7.0 \
-    keras==2.2.4 \
-    --no-cache-dir
 USER root
-RUN install2.r reticulate tensorflow keras
+
 
 ### tensorflow ABOVE
 
