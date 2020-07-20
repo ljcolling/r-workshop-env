@@ -1,4 +1,8 @@
-FROM lcolling/r-workshop-env:latest
+FROM rocker/tidyverse:4.0.2
+
+
+RUN R -e 'xfun::pkg_attach2("tidyverse","emmeans","afex","psych","apa","here","ggbeeswarm")'
+RUN R -e 'xfun::install_github("ljcolling/teachingtools")'
 
 ENV NB_USER rstudio
 ENV NB_UID 1000
