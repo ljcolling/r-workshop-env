@@ -1,5 +1,5 @@
 ## Use a tag instead of "latest" for reproducibility
-FROM rocker/binder:latest
+FROM lcolling/r-workshop-env
 
 ## Declares build arguments
 ARG NB_USER
